@@ -331,13 +331,13 @@ const Index = () => {
                   }`}
                 >
                   <CardContent className="p-0 space-y-4">
-                    <div className="flex items-end justify-center gap-1 h-36">
+                    <div className="flex items-end justify-center gap-2 h-44">
                       {Array.from({ length: kit.pots }).map((_, j) => (
                         <img
                           key={j}
                           src={gumwayPot}
                           alt={kit.name}
-                          className={`object-contain ${kit.pots === 1 ? 'w-32 h-32' : kit.pots === 2 ? 'w-24 h-24' : 'w-20 h-20'}`}
+                          className={`object-contain ${kit.pots === 1 ? 'w-40 h-40' : kit.pots === 2 ? 'w-32 h-32' : 'w-28 h-28'}`}
                         />
                       ))}
                     </div>
