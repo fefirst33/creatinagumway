@@ -10,6 +10,7 @@ import product1 from "@/assets/gumway-product-1.png";
 import product2 from "@/assets/gumway-product-2.png";
 import product3 from "@/assets/gumway-product-3.png";
 import heroBg from "@/assets/gumway-hero-bg.png";
+import gumwayPot from "@/assets/gumway-pot.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -36,6 +37,7 @@ const kits = [
   {
     name: "1 Pote",
     units: "60 gomas",
+    pots: 1,
     price: "R$ 89,90",
     originalPrice: null,
     perUnit: null,
@@ -46,6 +48,7 @@ const kits = [
   {
     name: "2 Potes",
     units: "120 gomas",
+    pots: 2,
     price: "R$ 159,90",
     originalPrice: "R$ 179,80",
     perUnit: "R$ 79,95/un",
@@ -56,6 +59,7 @@ const kits = [
   {
     name: "3 Potes",
     units: "180 gomas",
+    pots: 3,
     price: "R$ 219,90",
     originalPrice: "R$ 269,70",
     perUnit: "R$ 73,30/un",
@@ -327,11 +331,16 @@ const Index = () => {
                   }`}
                 >
                   <CardContent className="p-0 space-y-4">
-                    <img
-                      src={product3}
-                      alt={kit.name}
-                      className="w-32 h-32 object-contain mx-auto"
-                    />
+                    <div className="flex items-end justify-center gap-1 h-36">
+                      {Array.from({ length: kit.pots }).map((_, j) => (
+                        <img
+                          key={j}
+                          src={gumwayPot}
+                          alt={kit.name}
+                          className={`object-contain ${kit.pots === 1 ? 'w-32 h-32' : kit.pots === 2 ? 'w-24 h-24' : 'w-20 h-20'}`}
+                        />
+                      ))}
+                    </div>
                     <h3 className="font-display text-2xl font-bold text-foreground">{kit.name}</h3>
                     <p className="text-muted-foreground text-sm font-body">{kit.units}</p>
                     {kit.originalPrice && (
