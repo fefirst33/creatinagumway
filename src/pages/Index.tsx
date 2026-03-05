@@ -109,52 +109,46 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       {/* HERO */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-primary-glow min-h-[90vh] flex items-center justify-center px-4 py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_60%)]" />
-        <div className="container mx-auto max-w-6xl relative z-10">
+      <section className="relative min-h-[90vh] flex items-center justify-center px-4 py-16 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${product1})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary-glow/85" />
+        <div className="container mx-auto max-w-4xl relative z-10 text-center">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={stagger}
-            className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16"
           >
-            <div className="flex-1 text-center lg:text-left">
-              <motion.img
-                variants={fadeUp}
-                src={gumwayLogo}
-                alt="Gumway Logo"
-                className="h-16 md:h-20 mx-auto lg:mx-0 mb-8 rounded-xl"
-              />
-              <motion.h1
-                variants={fadeUp}
-                className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-primary-foreground leading-tight mb-6"
-              >
-                Força e Sabor{" "}
-                <span className="block">em Cada Goma!</span>
-              </motion.h1>
-              <motion.p
-                variants={fadeUp}
-                className="text-primary-foreground/90 text-lg md:text-xl max-w-lg mx-auto lg:mx-0 mb-8 font-body"
-              >
-                A creatina mais prática e saborosa do mercado. Sem misturas, sem shakes — só abrir e saborear.
-              </motion.p>
-              <motion.div variants={fadeUp}>
-                <a href={BUY_LINK}>
-                  <Button
-                    size="lg"
-                    className="bg-background text-primary hover:bg-background/90 font-display font-bold text-lg px-10 py-6 rounded-full shadow-2xl hover:scale-105 transition-transform"
-                  >
-                    COMPRAR AGORA
-                  </Button>
-                </a>
-              </motion.div>
-            </div>
-            <motion.div variants={fadeUp} className="flex-1 flex justify-center">
-              <img
-                src={product1}
-                alt="Gumway Creatina Gummies Frutas Vermelhas"
-                className="w-72 md:w-96 lg:w-[28rem] drop-shadow-2xl"
-              />
+            <motion.img
+              variants={fadeUp}
+              src={gumwayLogo}
+              alt="Gumway Logo"
+              className="h-16 md:h-20 mx-auto mb-8 rounded-xl"
+            />
+            <motion.h1
+              variants={fadeUp}
+              className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-primary-foreground leading-tight mb-6"
+            >
+              Força e Sabor{" "}
+              <span className="block">em Cada Goma!</span>
+            </motion.h1>
+            <motion.p
+              variants={fadeUp}
+              className="text-primary-foreground/90 text-lg md:text-xl max-w-lg mx-auto mb-8 font-body"
+            >
+              A creatina mais prática e saborosa do mercado. Sem misturas, sem shakes — só abrir e saborear.
+            </motion.p>
+            <motion.div variants={fadeUp}>
+              <a href={BUY_LINK}>
+                <Button
+                  size="lg"
+                  className="bg-background text-primary hover:bg-background/90 font-display font-bold text-lg px-10 py-6 rounded-full shadow-2xl hover:scale-105 transition-transform"
+                >
+                  COMPRAR AGORA
+                </Button>
+              </a>
             </motion.div>
           </motion.div>
         </div>
