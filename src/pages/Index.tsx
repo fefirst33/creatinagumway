@@ -9,6 +9,7 @@ import gumwayLogo from "@/assets/gumway-logo.jpeg";
 import product1 from "@/assets/gumway-product-1.png";
 import product2 from "@/assets/gumway-product-2.png";
 import product3 from "@/assets/gumway-product-3.png";
+import heroBg from "@/assets/gumway-hero-bg.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -109,38 +110,44 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       {/* HERO */}
-      <section className="relative min-h-[90vh] flex items-center justify-center px-4 py-16 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-end justify-start px-4 py-16 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${product1})` }}
+          style={{ backgroundImage: `url(${heroBg})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary-glow/85" />
-        <div className="container mx-auto max-w-4xl relative z-10 text-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-transparent to-transparent" />
+        <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={stagger}
+            className="max-w-lg bg-white/70 backdrop-blur-md rounded-2xl p-8 md:p-10 shadow-xl mb-8"
           >
+            <motion.p
+              variants={fadeUp}
+              className="text-primary font-display font-semibold tracking-widest uppercase text-sm mb-2"
+            >
+              Suplementação Reinventada
+            </motion.p>
             <motion.h1
               variants={fadeUp}
-              className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-primary-foreground leading-tight mb-6"
+              className="font-display text-5xl md:text-6xl lg:text-7xl font-black text-foreground leading-none mb-4"
             >
-              Força e Sabor{" "}
-              <span className="block">em Cada Goma!</span>
+              Gumway
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-primary-foreground/90 text-lg md:text-xl max-w-lg mx-auto mb-8 font-body"
+              className="text-primary text-lg md:text-xl font-body mb-6 leading-relaxed"
             >
-              A creatina mais prática e saborosa do mercado. Sem misturas, sem shakes — só abrir e saborear.
+              Gummies que cabem na sua rotina. Sabor irresistível, zero preparo, uma sobremesa anabólica.
             </motion.p>
             <motion.div variants={fadeUp}>
               <a href={BUY_LINK}>
                 <Button
                   size="lg"
-                  className="bg-background text-primary hover:bg-background/90 font-display font-bold text-lg px-10 py-6 rounded-full shadow-2xl hover:scale-105 transition-transform"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-display font-bold text-lg px-10 py-6 rounded-full shadow-2xl hover:scale-105 transition-transform"
                 >
-                  COMPRAR AGORA
+                  DESCUBRA OS GUMMIES
                 </Button>
               </a>
             </motion.div>
