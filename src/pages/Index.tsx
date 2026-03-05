@@ -9,8 +9,6 @@ import gumwayLogo from "@/assets/gumway-logo.jpeg";
 import product1 from "@/assets/gumway-product-1.png";
 import product2 from "@/assets/gumway-product-2.png";
 import product3 from "@/assets/gumway-product-3.png";
-import heroBg from "@/assets/gumway-hero-bg.png";
-import gumwayPot from "@/assets/gumway-pot.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -37,7 +35,6 @@ const kits = [
   {
     name: "1 Pote",
     units: "60 gomas",
-    pots: 1,
     price: "R$ 89,90",
     originalPrice: null,
     perUnit: null,
@@ -48,7 +45,6 @@ const kits = [
   {
     name: "2 Potes",
     units: "120 gomas",
-    pots: 2,
     price: "R$ 159,90",
     originalPrice: "R$ 179,80",
     perUnit: "R$ 79,95/un",
@@ -59,7 +55,6 @@ const kits = [
   {
     name: "3 Potes",
     units: "180 gomas",
-    pots: 3,
     price: "R$ 219,90",
     originalPrice: "R$ 269,70",
     perUnit: "R$ 73,30/un",
@@ -114,44 +109,38 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       {/* HERO */}
-      <section className="relative min-h-[90vh] flex items-end justify-start px-4 py-16 overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center px-4 py-16 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBg})` }}
+          style={{ backgroundImage: `url(${product1})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-transparent to-transparent" />
-        <div className="container mx-auto max-w-6xl relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary-glow/85" />
+        <div className="container mx-auto max-w-4xl relative z-10 text-center">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={stagger}
-            className="max-w-lg bg-white/70 backdrop-blur-md rounded-2xl p-8 md:p-10 shadow-xl mb-8"
           >
-            <motion.p
-              variants={fadeUp}
-              className="text-primary font-display font-semibold tracking-widest uppercase text-sm mb-2"
-            >
-              Suplementação Reinventada
-            </motion.p>
             <motion.h1
               variants={fadeUp}
-              className="font-display text-5xl md:text-6xl lg:text-7xl font-black text-foreground leading-none mb-4"
+              className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-primary-foreground leading-tight mb-6"
             >
-              Gumway
+              Força e Sabor{" "}
+              <span className="block">em Cada Goma!</span>
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-primary text-lg md:text-xl font-body mb-6 leading-relaxed"
+              className="text-primary-foreground/90 text-lg md:text-xl max-w-lg mx-auto mb-8 font-body"
             >
-              Gummies que cabem na sua rotina. Sabor irresistível, zero preparo, uma sobremesa anabólica.
+              A creatina mais prática e saborosa do mercado. Sem misturas, sem shakes — só abrir e saborear.
             </motion.p>
             <motion.div variants={fadeUp}>
               <a href={BUY_LINK}>
                 <Button
                   size="lg"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-display font-bold text-lg px-10 py-6 rounded-full shadow-2xl hover:scale-105 transition-transform"
+                  className="bg-background text-primary hover:bg-background/90 font-display font-bold text-lg px-10 py-6 rounded-full shadow-2xl hover:scale-105 transition-transform"
                 >
-                  DESCUBRA OS GUMMIES
+                  COMPRAR AGORA
                 </Button>
               </a>
             </motion.div>
@@ -331,16 +320,11 @@ const Index = () => {
                   }`}
                 >
                   <CardContent className="p-0 space-y-4">
-                    <div className="flex items-end justify-center gap-2 h-44">
-                      {Array.from({ length: kit.pots }).map((_, j) => (
-                        <img
-                          key={j}
-                          src={gumwayPot}
-                          alt={kit.name}
-                          className={`object-contain ${kit.pots === 1 ? 'w-40 h-40' : kit.pots === 2 ? 'w-32 h-32' : 'w-28 h-28'}`}
-                        />
-                      ))}
-                    </div>
+                    <img
+                      src={product3}
+                      alt={kit.name}
+                      className="w-32 h-32 object-contain mx-auto"
+                    />
                     <h3 className="font-display text-2xl font-bold text-foreground">{kit.name}</h3>
                     <p className="text-muted-foreground text-sm font-body">{kit.units}</p>
                     {kit.originalPrice && (
