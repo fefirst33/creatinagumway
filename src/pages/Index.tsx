@@ -121,12 +121,6 @@ const Index = () => {
             animate="visible"
             variants={stagger}
           >
-            <motion.img
-              variants={fadeUp}
-              src={gumwayLogo}
-              alt="Gumway Logo"
-              className="h-16 md:h-20 mx-auto mb-8 rounded-xl"
-            />
             <motion.h1
               variants={fadeUp}
               className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-primary-foreground leading-tight mb-6"
