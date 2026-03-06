@@ -1,0 +1,177 @@
+{
+  "page": {
+    "title": "Gumway - Creatina Gummies Frutas Vermelhas",
+    "buyLink": "https://gumway.com.br/products/gummies-de-creatina-frutas-vermelhas-gumway",
+    "sections": [
+      {
+        "id": "announcement-bar",
+        "type": "marquee",
+        "messages": [
+          "🚚 Frete Grátis para todo o Brasil",
+          "🍬 Sabor Irresistível: Suplementos que você quer comer"
+        ]
+      },
+      {
+        "id": "hero",
+        "type": "hero",
+        "subtitle": "Suplementação Reinventada",
+        "title": "Gumway",
+        "description": "Creatina em Gummies que cabe na sua rotina. Sabor irresistível, zero preparo, uma sobremesa anabólica.",
+        "ctaText": "DESCUBRA OS GUMMIES",
+        "backgroundImage": "hero-mascot.png"
+      },
+      {
+        "id": "logo-marquee",
+        "type": "logo-marquee",
+        "logos": ["Gumway", "TikTok Shop", "4creators"]
+      },
+      {
+        "id": "por-que-gummies",
+        "type": "content-blocks",
+        "blocks": [
+          {
+            "image": "porque-gummies.webp",
+            "title": "Por Que Gummies?",
+            "description": "Chega de pó, água e shaker. Os gummies Gumway são práticos, saborosos e cabem na sua bolsa, mochila ou bolso. Suplementação de creatina nunca foi tão fácil.",
+            "ctaText": "CONHEÇA O PRODUTO",
+            "layout": "image-left"
+          },
+          {
+            "image": "lifestyle.webp",
+            "title": "Sem Água, Sem Shaker",
+            "description": "Leve para a academia, para o trabalho ou para onde quiser. A creatina Gumway em gummies de frutas vermelhas é a forma mais prática de manter sua suplementação em dia.",
+            "ctaText": null,
+            "layout": "image-right"
+          }
+        ]
+      },
+      {
+        "id": "product-showcase",
+        "type": "product",
+        "brand": "Gumway",
+        "name": "Gummies De Creatina Frutas Vermelhas Gumway",
+        "images": [
+          "creatina-1.webp",
+          "creatina-2.webp",
+          "creatina-3.webp",
+          "creatina-4.webp",
+          "creatina-5.webp"
+        ],
+        "kits": [
+          {
+            "label": "1 Pote",
+            "price": "R$ 159,00",
+            "originalPrice": null,
+            "perUnit": "R$ 159,00 / Unidade",
+            "discount": null,
+            "bestSeller": false
+          },
+          {
+            "label": "2 Potes",
+            "price": "R$ 302,10",
+            "originalPrice": "R$ 318,00",
+            "perUnit": "R$ 151,05 / Unidade",
+            "discount": "5%",
+            "bestSeller": true
+          },
+          {
+            "label": "3 Potes",
+            "price": "R$ 429,30",
+            "originalPrice": "R$ 477,00",
+            "perUnit": "R$ 143,10 / Unidade",
+            "discount": "10%",
+            "bestSeller": false
+          }
+        ],
+        "ctaText": "ADICIONAR AO CARRINHO"
+      },
+      {
+        "id": "oferta",
+        "type": "countdown-offer",
+        "title": "Oferta por Tempo Limitado",
+        "description": "Aproveite condições especiais na Creatina Gumway. Parcele em até 6x sem juros!",
+        "ctaText": "APROVEITAR OFERTA",
+        "backgroundImage": "oferta-bg.png",
+        "initialTimer": {
+          "days": 0,
+          "hours": 14,
+          "minutes": 30,
+          "seconds": 0
+        }
+      },
+      {
+        "id": "testimonials",
+        "type": "testimonials",
+        "title": "O Que Nossos Clientes Dizem...",
+        "subtitle": "Milhares de pessoas já transformaram sua rotina de suplementação com Gumway.",
+        "rating": "⭐ Avaliado 4.8/5 por 1.319+ Clientes Satisfeitos",
+        "items": [
+          {
+            "name": "Mariana S.",
+            "title": "Finalmente um suplemento gostoso!",
+            "text": "Odiava tomar creatina em pó. Agora com os gummies, virou o melhor momento do dia. Sabor de frutas vermelhas é viciante!",
+            "image": "testimonial-1.jpg",
+            "stars": 5
+          },
+          {
+            "name": "Rafael M.",
+            "title": "Praticidade total na academia",
+            "text": "Levo na mochila e tomo antes do treino. Sem shaker, sem bagunça. Performance top e sabor incrível!",
+            "image": "testimonial-2.jpg",
+            "stars": 5
+          },
+          {
+            "name": "Juliana C.",
+            "title": "Recomendo muito!",
+            "text": "Comprei o kit de 3 potes e valeu muito a pena. Meu namorado e eu usamos juntos. Sabor perfeito!",
+            "image": null,
+            "stars": 5
+          },
+          {
+            "name": "Mari P.",
+            "title": "Comprei o kit e não me arrependo",
+            "text": "Peguei o kit com 3 potes. Economia boa e recebi super rápido. Os gummies são deliciosos e funcionam de verdade.",
+            "image": null,
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "marquee-text",
+        "type": "marquee",
+        "messages": [
+          "Sabor que Transforma",
+          "Rotina sem Complicação"
+        ]
+      },
+      {
+        "id": "footer-cta",
+        "type": "cta",
+        "title": "Não perca mais tempo com shakes!",
+        "description": "Experimente a forma mais gostosa de tomar creatina. Garanta já a sua Gumway!",
+        "ctaText": "COMPRAR AGORA"
+      },
+      {
+        "id": "benefits-bar",
+        "type": "benefits",
+        "items": [
+          { "icon": "Truck", "title": "Frete Grátis", "description": "Para todo o Brasil." },
+          { "icon": "CreditCard", "title": "Parcele Sem Juros", "description": "Em até 6x no cartão de crédito." },
+          { "icon": "RotateCcw", "title": "Troca Facilitada", "description": "Devolução em até 30 dias." },
+          { "icon": "Star", "title": "Clientes Satisfeitos", "description": "Avaliação 4.8/5 estrelas." }
+        ]
+      },
+      {
+        "id": "footer",
+        "type": "footer",
+        "brand": "Gumway",
+        "copyright": "© 2026 Gumway. Todos os direitos reservados.",
+        "socialLinks": [
+          { "label": "Instagram", "url": "#" },
+          { "label": "TikTok", "url": "#" },
+          { "label": "WhatsApp", "url": "#" }
+        ]
+      }
+    ]
+  }
+}
